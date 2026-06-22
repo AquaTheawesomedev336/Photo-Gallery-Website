@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --dark-red: #630404;
+    --body-background: #fffcf6;
+    --logo-header: 'Special Elite';
+    --sub-header: 'Quicksand';
+    --menu-text: 'Montserrat';
+    --white: #ffffff;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--dark-red);
+    padding: 2rem 2rem;
+    
+}
+
+.logo-name, ul li a {
+    color: var(--white);
+}
+
+.logo-name {
+    font-family: var(--logo-header);
+    font-size: 1.15rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: var(--menu-text);
+}
+
